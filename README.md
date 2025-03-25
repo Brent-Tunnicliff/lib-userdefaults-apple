@@ -1,11 +1,6 @@
-# template-lib-apple
+# lib-userdefaults-apple
 
-Template as a base for all my Apple libraries.
-Project contains the package and a nested demo app `Demo/`.
-
-Open `Package.xcworkspace` in Xcode to edit and run both the package and the demo app.
-
-After generating the repository find all cases of `REPLACE_ME` and `REPLACE-ME` and rename them.
+Convenient helpers for UserDefaults.
 
 ## Disclaimer
 
