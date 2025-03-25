@@ -1,0 +1,39 @@
+# Copyright © 2025 Brent Tunnicliff <brent@tunnicliff.dev>
+
+name: Pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  package:
+    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
+    name: Package
+    strategy:
+      matrix:
+        platform: ["iOS", "macOS", "tvOS", "watchOS", "visionOS"]
+    with:
+      platform: "${{ matrix.platform }}"
+      scheme: "Package"
+      skip_tests: false
+      workspace: "Package.xcworkspace"
+  demo:
+    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
+    name: Demo
+    strategy:
+      matrix:
+        platform: ["iOS", "macOS", "tvOS", "visionOS"]
+    with:
+      platform: "${{ matrix.platform }}"
+      scheme: "Demo"
+      skip_tests: true
+      workspace: "Package.xcworkspace"
+  demo_watch:
+    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
+    name: Demo (watchOS)
+    with:
+      platform: "watchOS"
+      scheme: "Demo Watch App"
+      skip_tests: true
+      workspace: "Package.xcworkspace"
