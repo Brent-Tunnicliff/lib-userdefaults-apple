@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "REPLACE_ME"
-               BuildableName = "REPLACE_ME"
-               BlueprintName = "REPLACE_ME"
+               BlueprintIdentifier = "UserDefaultsHelpers"
+               BuildableName = "UserDefaultsHelpers"
+               BlueprintName = "UserDefaultsHelpers"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,7 +30,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Tests/REPLACE_METests/REPLACE_ME.xctestplan"
+            reference = "container:Tests/UserDefaultsHelpersTests/UserDefaultsHelpers.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -39,9 +39,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "REPLACE_METests"
-               BuildableName = "REPLACE_METests"
-               BlueprintName = "REPLACE_METests"
+               BlueprintIdentifier = "UserDefaultsHelpersTests"
+               BuildableName = "UserDefaultsHelpersTests"
+               BlueprintName = "UserDefaultsHelpersTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -67,9 +67,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "REPLACE_ME"
-            BuildableName = "REPLACE_ME"
-            BlueprintName = "REPLACE_ME"
+            BlueprintIdentifier = "UserDefaultsHelpers"
+            BuildableName = "UserDefaultsHelpers"
+            BlueprintName = "UserDefaultsHelpers"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

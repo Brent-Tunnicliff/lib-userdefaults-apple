@@ -17,23 +17,3 @@ jobs:
       platform: "${{ matrix.platform }}"
       scheme: "Package"
       skip_tests: false
-      workspace: "Package.xcworkspace"
-  demo:
-    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
-    name: Demo
-    strategy:
-      matrix:
-        platform: ["iOS", "macOS", "tvOS", "visionOS"]
-    with:
-      platform: "${{ matrix.platform }}"
-      scheme: "Demo"
-      skip_tests: true
-      workspace: "Package.xcworkspace"
-  demo_watch:
-    uses: Brent-Tunnicliff/workflow-common-apple/.github/workflows/common.yml@v1
-    name: Demo (watchOS)
-    with:
-      platform: "watchOS"
-      scheme: "Demo Watch App"
-      skip_tests: true
-      workspace: "Package.xcworkspace"
