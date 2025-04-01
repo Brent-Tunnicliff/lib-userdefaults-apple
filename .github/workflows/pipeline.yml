@@ -15,5 +15,5 @@ jobs:
         platform: ["iOS", "macOS", "tvOS", "watchOS", "visionOS"]
     with:
       platform: "${{ matrix.platform }}"
-      scheme: "Package"
+      scheme: "UserDefaults"
       skip_tests: false
