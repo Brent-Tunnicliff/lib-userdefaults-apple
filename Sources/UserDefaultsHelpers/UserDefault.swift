@@ -14,6 +14,7 @@ public import SwiftUI
 public struct UserDefault<Value: Equatable>: DynamicProperty {
     @State private var inner: Inner
 
+    /// A binding to the value.
     @MainActor
     public var projectedValue: Binding<Value> {
         Binding(
@@ -22,6 +23,7 @@ public struct UserDefault<Value: Equatable>: DynamicProperty {
         )
     }
 
+    /// The wrapped object.
     @MainActor
     public var wrappedValue: Value {
         get { inner.value }
